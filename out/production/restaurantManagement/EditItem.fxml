@@ -12,17 +12,17 @@
     <children>
         <VBox prefHeight="100.0" prefWidth="330.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
             <children>
-                <JFXTextField fx:id="foodName" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="New Name" text="New Name" unFocusColor="#ebebeb00">
+                <JFXTextField fx:id="foodName" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="New Name" unFocusColor="#ebebeb00">
                     <font>
                         <Font name="Courier New" size="16.0" />
                     </font>
                 </JFXTextField>
-                <JFXTextField fx:id="foodPrice" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="New Price" text="New Price" unFocusColor="#0034e000">
+                <JFXTextField fx:id="foodPrice" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="New Price" unFocusColor="#0034e000">
                     <font>
                         <Font name="Courier New" size="16.0" />
                     </font>
                 </JFXTextField>
-                <JFXTextField fx:id="foodAvailability" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="New Availability" text="New Availability" unFocusColor="#0034e000">
+                <JFXTextField fx:id="foodAvailability" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="New Availability" unFocusColor="#0034e000">
                     <font>
                         <Font name="Courier New" size="16.0" />
                     </font>

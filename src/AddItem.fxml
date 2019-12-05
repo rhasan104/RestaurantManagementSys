@@ -8,22 +8,21 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="240.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddItemController">
    <children>
       <VBox prefHeight="100.0" prefWidth="330.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
          <children>
-            <JFXTextField fx:id="foodName" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="Item Name" text="Item Name" unFocusColor="#ebebeb00">
+            <JFXTextField fx:id="foodName" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="Item Name" unFocusColor="#ebebeb00">
                <font>
                   <Font name="Courier New" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="foodPrice" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="Item Price" text="Item Price" unFocusColor="#0034e000">
+            <JFXTextField fx:id="foodPrice" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="Item Price" unFocusColor="#0034e000">
                <font>
                   <Font name="Courier New" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="foodAvailability" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="Availability" text="Availability" unFocusColor="#0034e000">
+            <JFXTextField fx:id="foodAvailability" focusColor="#40a84f" prefHeight="27.0" prefWidth="335.0" promptText="Availability" unFocusColor="#0034e000">
                <font>
                   <Font name="Courier New" size="16.0" />
                </font>

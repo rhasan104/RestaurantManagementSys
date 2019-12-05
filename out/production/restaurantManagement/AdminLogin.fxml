@@ -15,7 +15,7 @@
    <children>
       <VBox alignment="TOP_CENTER" layoutX="552.0" layoutY="320.0" prefHeight="116.0" prefWidth="176.0" spacing="5.0">
          <children>
-            <JFXTextField id="username" fx:id="username" alignment="CENTER" focusColor="WHITE" promptText="username" styleClass="txtfldusername" stylesheets="@adminLogin.css" text="username" unFocusColor="TRANSPARENT" VBox.vgrow="NEVER">
+            <JFXTextField id="username" fx:id="username" alignment="CENTER" focusColor="WHITE" promptText="username" styleClass="txtfldusername" stylesheets="@adminLogin.css" unFocusColor="TRANSPARENT" VBox.vgrow="NEVER">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
@@ -23,7 +23,7 @@
                   <Insets bottom="5.0" />
                </VBox.margin>
             </JFXTextField>
-            <JFXPasswordField id="password" fx:id="password" alignment="CENTER" focusColor="WHITE" promptText="Password" styleClass="txtfldusername" stylesheets="@adminLogin.css" text="password" unFocusColor="TRANSPARENT" VBox.vgrow="NEVER">
+            <JFXPasswordField id="password" fx:id="password" alignment="CENTER" focusColor="WHITE" promptText="Password" styleClass="txtfldusername" stylesheets="@adminLogin.css" unFocusColor="TRANSPARENT" VBox.vgrow="NEVER">
                <font>
                   <Font size="15.0" />
                </font>

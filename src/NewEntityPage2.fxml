@@ -11,7 +11,7 @@
     <children>
         <VBox layoutX="5.0" layoutY="8.0" prefHeight="192.0" prefWidth="590.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="8.0">
             <children>
-                <JFXTextField fx:id="contact" focusColor="#40a84f" promptText="Contact Person" text="Contact Person" unFocusColor="#4d4d4d00">
+                <JFXTextField fx:id="contact" focusColor="#40a84f" promptText="Contact Person" unFocusColor="#4d4d4d00">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -19,7 +19,7 @@
                         <Insets bottom="10.0" />
                     </VBox.margin>
                 </JFXTextField>
-                <JFXTextField fx:id="genre" focusColor="#40a84f" promptText="Genre" text="Genre" unFocusColor="#4d4d4d00">
+                <JFXTextField fx:id="genre" focusColor="#40a84f" promptText="Genre" unFocusColor="#4d4d4d00">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -27,7 +27,7 @@
                         <Insets bottom="10.0" />
                     </VBox.margin>
                 </JFXTextField>
-                <JFXTextField fx:id="hours" focusColor="#40a84f" promptText="Business Hours" text="Business Hours" unFocusColor="#4d4d4d00">
+                <JFXTextField fx:id="hours" focusColor="#40a84f" promptText="Business Hours" unFocusColor="#4d4d4d00">
                     <font>
                         <Font size="20.0" />
                     </font>
