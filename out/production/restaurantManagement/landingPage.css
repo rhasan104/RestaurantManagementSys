@@ -1,0 +1,38 @@
+.anchor {
+    -fx-background-image: url('pictures/landingpage.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: fixed;
+    -fx-background-size: cover;
+}
+
+.btnAdmin {
+    -fx-background-color: rgba(239, 240, 242, 1);
+    -fx-background-radius: 10px;
+}
+
+#search {
+    -fx-background-color: rgba(74, 75, 76, .90);
+}
+
+.txtfldSearchBar {
+    -fx-background-color: rgba(255, 255, 255, 1);
+}
+
+.txtSearchButton {
+    -fx-border-radius: 15 15 15 15;
+    -fx-background-color: white;
+}
+
+.shadedPane {
+    -fx-background-color: rgba(44, 63, 81, .40);
+    -fx-border-radius: 50 50 50 50;
+}
+
+.searchBox {
+    -fx-background-color: rgba(255, 255, 255, 0.70);
+    -fx-background-radius: 15px 15px 15px 15px;
+}
+
+.restaurantTable {
+    -fx-background-radius: 15px;
+}

@@ -1,0 +1,10 @@
+.mainPane {
+    -fx-background-image: url('pictures/redphone.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: fixed;
+    -fx-background-size: cover;
+}
+
+.btnHome {
+    -fx-background-color: rgba(0, 0, 0, .20);
+}

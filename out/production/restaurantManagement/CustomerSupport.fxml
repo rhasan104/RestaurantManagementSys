@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerSupportController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1280.0" styleClass="mainPane" stylesheets="@customerSupport.css">
+         <children>
+            <VBox alignment="CENTER" layoutX="500.0" layoutY="310.0">
+               <children>
+                  <Text fill="#069760" strokeWidth="0.0" text="Call For Immediate Help" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-800-EXAMPLE" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <JFXButton id="btnHome" fx:id="btnHome" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="100.0" onAction="#homeBtnWasClicked" styleClass="btnHome" stylesheets="@customerSupport.css" text="Home" textAlignment="CENTER" textFill="#bf0000">
+               <font>
+                  <Font name="Courier New Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

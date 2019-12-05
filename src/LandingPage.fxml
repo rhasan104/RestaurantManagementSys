@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="anchor" stylesheets="@landingPage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LandingPageController">
+   <children>
+      <Pane layoutY="40.0" prefHeight="447.0" prefWidth="713.0" styleClass="shadedPane" stylesheets="@landingPage.css" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <TableView fx:id="restaurantTable" layoutX="294.0" layoutY="51.0" prefHeight="509.0" prefWidth="732.0" styleClass="restaurantTable" stylesheets="@landingPage.css">
+              <columns>
+                <TableColumn fx:id="restaurantName" editable="false" prefWidth="332.98675537109375" sortable="false" text="Restaurant" />
+                <TableColumn fx:id="restaurantDistance" editable="false" prefWidth="107.01321411132812" text="Distance" />
+                  <TableColumn fx:id="restaurantlocation" editable="false" prefWidth="73.241455078125" sortable="false" text="Location" />
+                  <TableColumn fx:id="restaurantGenre" editable="false" prefWidth="189.7830810546875" sortable="false" text="Genre" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnAdmin" alignment="CENTER" contentDisplay="CENTER" layoutX="1007.0" layoutY="33.0" onAction="#adminButtonClicked" prefHeight="56.0" prefWidth="222.0" styleClass="btnAdmin" stylesheets="@landingPage.css" text="Administrator" textAlignment="CENTER" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="33.0">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXButton>
+      <Pane layoutX="497.0" layoutY="71.0" prefHeight="98.0" prefWidth="282.0" styleClass="searchBox" stylesheets="@landingPage.css">
+         <children>
+            <Text id="search" layoutX="-3.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Location" textAlignment="CENTER" wrappingWidth="180.98150634765625">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Text>
+            <JFXTextField alignment="CENTER" focusColor="#40a855" layoutX="13.0" layoutY="50.0" prefHeight="35.0" prefWidth="48.0" promptText="XX" unFocusColor="#ffffff00" fx:id="xCoor">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="yCoor" alignment="CENTER" focusColor="#40a855" layoutX="92.0" layoutY="50.0" prefHeight="35.0" prefWidth="48.0" promptText="YY" unFocusColor="#ffffff00">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Text layoutX="66.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER" wrappingWidth="12.302848815917969">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <JFXButton id="search" fx:id="btnSearch" contentDisplay="CENTER" layoutX="190.0" layoutY="40.0" onAction="#searchWasClicked" prefHeight="44.0" prefWidth="80.0" stylesheets="@landingPage.css" text="Search" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

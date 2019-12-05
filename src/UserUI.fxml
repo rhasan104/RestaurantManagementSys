@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" stylesheets="@AdminUI.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserUIController">
+    <children>
+        <SplitPane dividerPositions="0.25508607198748046" layoutX="105.0" layoutY="101.0" prefHeight="800.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@AdminUI.css">
+                    <children>
+                        <Separator layoutY="140.0" prefHeight="15.0" prefWidth="322.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Separator layoutX="-10.0" layoutY="708.0" prefHeight="15.0" prefWidth="322.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <VBox layoutX="4.0" layoutY="149.0" prefHeight="560.0" prefWidth="312.0" stylesheets="@AdminUI.css">
+                            <children>
+                                <JFXButton fx:id="btnAppetizers" onAction="#appetizersWasClicked" prefHeight="56.0" prefWidth="312.0" styleClass="menuButtons" stylesheets="@AdminUI.css" text="Appetizers">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </JFXButton>
+                                <JFXButton fx:id="btnEntrees" onAction="#entreesWasClicked" prefHeight="56.0" prefWidth="312.0" styleClass="menuButtons" stylesheets="@AdminUI.css" text="Entrees">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </JFXButton>
+                                <JFXButton fx:id="btnDessert" onAction="#dessertWasClicked" prefHeight="56.0" prefWidth="312.0" styleClass="menuButtons" stylesheets="@AdminUI.css" text="Desserts">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </JFXButton>
+                                <JFXButton fx:id="btnDrinks" onAction="#drinksWasClicked" prefHeight="56.0" prefWidth="312.0" styleClass="menuButtons" stylesheets="@AdminUI.css" text="Drinks">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </JFXButton>
+                                <JFXButton fx:id="btnLunch" onAction="#lunchWasClicked" prefHeight="56.0" prefWidth="312.0" styleClass="menuButtons" stylesheets="@AdminUI.css" text="Lunch">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </JFXButton>
+                                <JFXButton fx:id="btnSpecial" onAction="#specialWasCliked" prefHeight="56.0" prefWidth="312.0" styleClass="menuButtons" stylesheets="@AdminUI.css" text="Special">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                            </children>
+                        </VBox>
+                        <ChoiceBox fx:id="chooseRestaurant" layoutX="11.0" layoutY="14.0" prefHeight="38.0" prefWidth="297.0" AnchorPane.leftAnchor="11.0" />
+                        <Button fx:id="btnSelectRestaurant" layoutX="11.0" layoutY="52.0" mnemonicParsing="false" onAction="#selectRestaurantClicked" prefHeight="40.0" prefWidth="203.0" text="Select Restaurant" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="55.0">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@AdminUI.css">
+                    <children>
+                        <SplitPane dividerPositions="0.8919597989949749" layoutX="262.0" layoutY="171.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <Separator layoutY="140.0" prefHeight="15.0" prefWidth="946.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                        <Text id="txtRestaurantName" fx:id="txtRestaurantName" layoutX="72.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="retaurantName" text="Restaurant Name" wrappingWidth="886.3680419921875" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                                            <font>
+                                                <Font name="Courier New Bold" size="24.0" />
+                                            </font>
+                                        </Text>
+                                        <Text id="txtRestaurantLocation" fx:id="txtRestaurantLocation" layoutX="82.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="retaurantLocation" text="Location:" wrappingWidth="116.869873046875" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="55.0">
+                                            <font>
+                                                <Font name="Courier New Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text id="txtRestaurantOwner" fx:id="textOwner" layoutX="92.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="retaurantOwner" text="Owner:" wrappingWidth="77.24417114257812" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="80.0">
+                                            <font>
+                                                <Font name="Courier New Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text id="txtRestaurantHours" fx:id="txtRestaurantHours" layoutX="100.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="retaurantHours" text="Business Hours:" wrappingWidth="187.86563110351562" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="105.0">
+                                            <font>
+                                                <Font name="Courier New Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text id="txtRestLocation" fx:id="txtRestLocation" layoutX="150.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="location" wrappingWidth="775.2566745407595" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="55.0">
+                                            <font>
+                                                <Font name="Courier New Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text id="txtRestOwner" fx:id="txtRestOwner" layoutX="202.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="owner" wrappingWidth="802.0623168945312" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="80.0">
+                                            <font>
+                                                <Font name="Courier New Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <Text id="txtRestOwner" fx:id="txtRestHours" layoutX="205.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="owner" wrappingWidth="699.6962280273438" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="105.0">
+                                            <font>
+                                                <Font name="Courier New Bold" size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <TableView fx:id="tableView" editable="true" layoutX="79.0" layoutY="147.0" prefHeight="563.0" prefWidth="946.0" stylesheets="@AdminUI.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="147.0">
+                                            <columns>
+                                                <TableColumn fx:id="itemID" prefWidth="75.0" resizable="false" text="Item ID" />
+                                                <TableColumn fx:id="itemName" minWidth="150.0" prefWidth="543.6557312011719" resizable="false" text="Item Name" />
+                                                <TableColumn fx:id="price" minWidth="0.0" prefWidth="159.3441162109375" resizable="false" text="Price" />
+                                                <TableColumn fx:id="Availability" maxWidth="163.0" minWidth="126.05828857421875" prefWidth="163.0" resizable="false" text="Availability" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <HBox layoutX="90.0" layoutY="-9.0" prefHeight="100.0" prefWidth="857.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <Button fx:id="btnGoBack" mnemonicParsing="false" onAction="#goBackClicked" prefHeight="37.0" prefWidth="181.0" text="Go Back">
+                                                    <HBox.margin>
+                                                        <Insets left="200.0" />
+                                                    </HBox.margin>
+                                                    <font>
+                                                        <Font name="Courier New" size="20.0" />
+                                                    </font>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
